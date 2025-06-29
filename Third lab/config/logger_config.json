@@ -1,0 +1,30 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s %(processName)-10s %(name)s %(levelname)-8s %(message)s"
+        }
+    },
+    "handlers": {
+        "consoleHandler": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple"
+        },
+        "file": {
+            "class": "logging.FileHandler",
+            "level": "INFO",
+            "formatter": "simple",
+            "filename": "app.log",
+            "mode": "a"
+        }
+    },
+    "root": {
+        "level": "DEBUG",
+        "handlers": [
+            "consoleHandler",
+            "file"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+matplotlib = "*"
+pandas = "*"
+statsmodels = "*"
+openpyxl = "*"
+meteostat = "*"
+ipykernel = "*"
+numpy = "*"
+setuptools = "*"
+flake8 = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
